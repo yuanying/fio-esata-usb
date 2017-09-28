@@ -1,19 +1,21 @@
 #!/usr/bin/env bash
 
-fio -o /media/root/home/core/fio/seq-randwrite-dev03-p-32m.result \
+fio -o /media/root/home/core/fio/4k-write-rand-p-dev03.result \
     -rw=randwrite \
+    -direct=1 \
     -size=256m \
-    -bs=32m \
+    -bs=4k \
     -directory=/media/root/var/lib/heketi/dev03 \
     -loops=-1 \
-    -runtime=30 \
+    -runtime=10 -numjobs=64 -group_reporting \
     -name=seqwritedev03 &
 
-fio -o /media/root/home/core/fio/seq-randwrite-dev04-p-32m.result \
+fio -o /media/root/home/core/fio/4k-write-rand-p-dev04.result \
     -rw=randwrite \
+    -direct=1 \
     -size=256m \
-    -bs=32m \
+    -bs=4k \
     -directory=/media/root/var/lib/heketi/dev04 \
     -loops=-1 \
-    -runtime=30 \
+    -runtime=10 -numjobs=64 -group_reporting \
     -name=seqwritedev04 &
