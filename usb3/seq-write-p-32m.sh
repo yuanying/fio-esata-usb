@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-fio -o /media/root/home/core/fio/seq-read-dev03-p-32m.result \
+fio -o /media/root/home/core/fio/seq-write-dev03-p-32m.result \
     -rw=write \
     -size=256m \
     -bs=32m \
@@ -9,7 +9,7 @@ fio -o /media/root/home/core/fio/seq-read-dev03-p-32m.result \
     -runtime=30 \
     -name=seqwritedev03 &
 
-fio -o /media/root/home/core/fio/seq-read-dev04-p-32m.result \
+fio -o /media/root/home/core/fio/seq-write-dev04-p-32m.result \
     -rw=write \
     -size=256m \
     -bs=32m \
