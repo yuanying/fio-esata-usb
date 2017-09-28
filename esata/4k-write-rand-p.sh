@@ -2,7 +2,6 @@
 
 fio -o /media/root/home/core/fio/4k-write-rand-p-dev01.result \
     -rw=randwrite \
-    -direct=1 \
     -size=256m \
     -bs=4k \
     -directory=/media/root/var/lib/heketi/dev01 \
@@ -12,7 +11,6 @@ fio -o /media/root/home/core/fio/4k-write-rand-p-dev01.result \
 
 fio -o /media/root/home/core/fio/4k-write-rand-p-dev02.result \
     -rw=randwrite \
-    -direct=1 \
     -size=256m \
     -bs=4k \
     -directory=/media/root/var/lib/heketi/dev02 \

@@ -2,7 +2,6 @@
 
 fio -o /media/root/home/core/fio/32m-write-seq-p-dev03.result \
     -rw=write \
-    -direct=1 \
     -size=256m \
     -bs=32m \
     -directory=/media/root/var/lib/heketi/dev03 \
@@ -12,7 +11,6 @@ fio -o /media/root/home/core/fio/32m-write-seq-p-dev03.result \
 
 fio -o /media/root/home/core/fio/32m-write-seq-p-dev04.result \
     -rw=write \
-    -direct=1 \
     -size=256m \
     -bs=32m \
     -directory=/media/root/var/lib/heketi/dev04 \

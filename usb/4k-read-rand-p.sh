@@ -2,7 +2,6 @@
 
 fio -o /media/root/home/core/fio/4k-read-rand-p-dev03.result \
     -rw=randread \
-    -direct=1 \
     -size=256m \
     -bs=4k \
     -directory=/media/root/var/lib/heketi/dev03 \
@@ -12,7 +11,6 @@ fio -o /media/root/home/core/fio/4k-read-rand-p-dev03.result \
 
 fio -o /media/root/home/core/fio/4k-read-rand-p-dev04.result \
     -rw=randread \
-    -direct=1 \
     -size=256m \
     -bs=4k \
     -directory=/media/root/var/lib/heketi/dev04 \
